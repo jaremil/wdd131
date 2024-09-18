@@ -1,0 +1,54 @@
+header {
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+h1 {
+  margin-top: 10%;
+  font-size: 250%;
+  font-weight: 500;
+}
+
+h3 {
+  margin-top: 2%;
+  color: #006eb6;
+  font-size: 100%;
+  font-weight: 550;
+}
+
+hr {
+  margin-top: -10px;
+  margin-bottom: 6%;
+}
+
+body {
+  margin-right: 20%;
+  margin-left: 20%;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+ol {
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+li {
+  margin-top: 4%;
+  font-size: 20px;
+}
+
+p {
+  margin-left: 2%;
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+img {
+  margin-top: 6%;
+  margin-bottom: 10%;
+  width: 150px;
+}
