@@ -52,3 +52,7 @@ img {
   margin-bottom: 10%;
   width: 150px;
 }
+
+.dark{
+  background-color: black;
+}
