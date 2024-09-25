@@ -1,21 +1,20 @@
-var changeToggle = document.getElementById("changeTheme");
+const themeSelector = document.querySelector("#changeToggle");
 
-const changeToggle = document.querySelector(".dark");
-
-function changeTheme(){
+function changeTheme() {
 
     var select = document.querySelector("select");
-    select.value; 
+    var themeValue = select.value; 
 
-if (arguments.value == "dark") {
+if (themeValue == "dark") {
+  document.body.setAttribute('data-theme', 'dark'); 
 
-    // add the dark class to the body
-   // change the source of the logo img to point to the white logo.
-
+  document.querySelector('#whiteLogo').setAttribute('src', 'byui-logo_white.png');
+  document.querySelector('#blueLogo').setAttribute('src', ''); 
   } else {
-   // remove the dark class
-   // make sure the logo src is the blue logo.
+    document.body.setAttribute('data-theme', 'light'); 
+    document.querySelector('#blueLogo').setAttribute('src', 'byui-logo_blue.jpg');
+    document.querySelector('#whiteLogo').setAttribute('src', ''); 
   }
 }
 
-changeToggle.addEventListener("change", changeTheme);
+themeSelector.addEventListener('change', changeTheme);

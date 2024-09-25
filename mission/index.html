@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="mission.js" id="changeTheme"></script>
+    <script src="mission.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Statement Part I</title>
-    <link rel="stylesheet" href="styles.css"></link>
+    <title>Mission Statement Part I</title> 
 </head>
-<header>
-    <h1>MISSION STATEMENT</h1>
-    <h3>BRIGHAM YOUNG UNIVERSITY-IDAHO</h3>
-    <hr width="98%" size="1">
-</header>
-<select>
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-</select>
-<body>    
+
+<body>  
+    <select id="changeToggle">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+
+    <header>
+        <h1>MISSION STATEMENT</h1>
+        <h3>BRIGHAM YOUNG UNIVERSITY-IDAHO</h3>
+        <hr width="98%" size="1">
+    </header>
+
     <p>Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
 
     <p><i>The university does this by:</i></p>
@@ -27,10 +31,14 @@
         <li>Providing a high-quality education that prepares students of diverse interests and abilities for lifelong learning and employment.</li>
         <li>Serving as many students as possible within resource constraints.</li>
         <li>Delivering education that is affordable for students and the Church.</li>
-      </ol>
-      <footer>
-        <img src="byui-logo_blue.jpg" alt="BYU-Idaho Logo">
+    </ol>
+
+    <footer>
+        <img id="blueLogo" src="byui-logo_blue.jpg" alt="BYU-Idaho Logo Blue">
+        <img id="whiteLogo" src="byui-logo_white.png" alt="BYU-Idaho Logo White">
     </footer>
+
     <div class="dark"></div>
+
 </body>
 </html>
