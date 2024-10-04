@@ -27,6 +27,10 @@ h1 {
   margin-left: 15%;
 }
 
+.menu_text {
+  display: none;
+}
+
 nav {
   background-color: var(--main-color);
   line-height: 50px;

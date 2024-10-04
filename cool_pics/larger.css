@@ -14,3 +14,8 @@
       justify-content: space-evenly;
     }
   }
+
+  .menu_text {
+    background-color: var(--main-color);
+    display: flex;
+  }
