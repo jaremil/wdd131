@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 800px) {
     h1 {
         background-color: black;
     }
@@ -6,7 +6,6 @@
         display: grid;
         grid-template-columns: 2fr;
         grid-gap: 1rem;}
-}
 
 body {
   font-family: Roboto, sans-serif;
@@ -31,3 +30,9 @@ main {
     background-color: white;
     padding: 10px;
   }
+}
+
+@media screen and (min-width: 800px) {
+
+
+}
