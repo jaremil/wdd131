@@ -27,10 +27,6 @@ h1 {
   margin-left: 15%;
 }
 
-.menu_text {
-  display: none;
-}
-
 nav {
   background-color: var(--main-color);
   line-height: 50px;
@@ -74,17 +70,18 @@ p {
   display: none;
 }
 
+
 #menu {
   position: absolute;
   top: 8px;
   right: 16px;
 }
 
-#menu::before {
-  content: "☰";
+#menu::before{
+  content:"☰";
 }
 
-#menu.open::before {
+#menu.open::before{
   content: "X";
 }
 

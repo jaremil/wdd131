@@ -1,7 +1,7 @@
 @media (min-width: 800px) {
-    #menu {
-      display: none;
-    }
+  #menu {
+    display: none;
+  }
   
     nav {
       line-height: 50px;
@@ -16,6 +16,10 @@
   }
 
   .menu_text {
+    display: grid;
+    grid-column: 1;
+    text-align: center;
     background-color: var(--main-color);
-    display: flex;
+    color: var(--text-color);
+    font-size: 35px;
   }
