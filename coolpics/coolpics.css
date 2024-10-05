@@ -3,7 +3,7 @@
   --main-color: #52489c;
   --text-color: #ffffff;
   --hover-color: #dac2fc;
-  --primary-font: Arial, Helvetica,sans-serif;
+  --primary-font: Arial, Helvetica, sans-serif;
   --secondary-font: Mooli, san-serif;
 }
 
@@ -78,6 +78,7 @@ p {
   font-size: 20px;
 }
 
+
 footer {
   display: grid;
   text-align: center;
@@ -87,7 +88,11 @@ footer {
 }
 
 
-@media (min-width: 800px) and (max-width: 3264px) {
+@media (min-width: 657px) and (max-width: 3264px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
   .heading {
     display: flex;
     justify-content: space-evenly;
@@ -113,7 +118,8 @@ footer {
   font-size: 35px;
 }
 
-@media (min-width: 375px) and (max-width: 799px) {
+/* (min-width: 596px) */
+@media only screen and (max-width: 656px) {
   .heading {
     display: none;
   }
@@ -135,5 +141,40 @@ footer {
   
   .open li {
     display: block;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: auto  auto;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .heading {
+    display: none;
+  }
+  
+  #menu {
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  #menu::before{
+    content:"☰";
+  }
+  
+  #menu.open::before{
+    content: "X";
+  }
+  
+  .open li {
+    display: block;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: auto ;
   }
 }
