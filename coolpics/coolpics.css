@@ -82,16 +82,23 @@ nav {
 
 /* large screen */
 @media (min-width: 1301px) and (max-width: 5000px) {
-
   .gallery {
     display: grid;
     place-items: center;
     grid-template-columns: auto auto auto;
   }
+
   .heading {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
   }
+
+  .heading li {
+    display: inline-block;
+    text-align: center;
+  }
+
 
   #menu {
     display: none;
@@ -112,7 +119,7 @@ nav {
     color: var(--text-color);
     font-size: 35px;
     content: "Menu";
-    border: none; 
+    border: none;
     cursor: pointer;
   }
 
@@ -141,7 +148,7 @@ nav {
     color: var(--text-color);
     font-size: 35px;
     content: "Menu";
-    border: none; 
+    border: none;
     cursor: pointer;
   }
 
