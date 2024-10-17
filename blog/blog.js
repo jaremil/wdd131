@@ -27,12 +27,16 @@ const articles = [
 ];
 
 function createArticle(article) {
-  document.getElementById("leftAside").innerHTML += `<h3>${article.none}</h3>`;
-  document.getElementById("leftAside").innerHTML = articles;
-  const leftAside = document.getElementById("leftAside");
-  const bookDetails = articles.forEach((article) => createArticle(article));
-
-  const templet = `<h3>${article.none}`;
-
-  console.log(templet);
+  const articleHTML = `
+    <h3>${article.title}</h3>
+    <p>${article.date}</p>
+    <img src="${article.imgSrc}" alt="${article.imgAlt}">
+    <p>${article.description}</p>
+    <p>Ages: ${article.ages}</p>
+    <p>Genre: ${article.genre}</p>
+    <p>Rating: ${article.stars}</p>
+  `;
+  document.getElementById("leftAside").innerHTML += articleHTML;
 }
+
+articles.forEach((article) => createArticle(article));

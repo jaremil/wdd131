@@ -7,14 +7,6 @@
 --headline: Lora, Impact, serif;
 }
 
-.leftAside {
-    float: left;
-}
-
-.rightAside {
-    float: right;
-}
-
 h1{
     font-family: var(--headline);
     font-size: 50px;
@@ -34,18 +26,10 @@ img{
     width: 350px;
 }
 
-.leftSection {
-    position: absolute;
-    left: 150px;
-    width: 200px;
-    height: 120px;
-}
-
-.middleSection {
-    text-align: center;
-}
-
-.rightSection {
+#middleSection{
 
 }
 
+#rightSection{
+
+}
