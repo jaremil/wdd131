@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root {
+--gold: #EFC69B;
+--red: #AF1B3F;
+--dark: #473144;
+--body: Helvetica, Arial, sans-serif;
+--headline: Lora, Impact, serif;
+}
+
 .leftAside {
     float: left;
 }
@@ -5,3 +14,38 @@
 .rightAside {
     float: right;
 }
+
+h1{
+    font-family: var(--headline);
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    font-family: var(--headline);
+    color: var(--red);
+}
+
+p{
+    font-family: var(--headline);
+}
+
+img{
+    width: 350px;
+}
+
+.leftSection {
+    position: absolute;
+    left: 150px;
+    width: 200px;
+    height: 120px;
+}
+
+.middleSection {
+    text-align: center;
+}
+
+.rightSection {
+
+}
+
