@@ -26,12 +26,9 @@ const articles = [
   },
 ];
 
-function createArticle(article) {
+function leftArticle(article) {
   const articleHTML = `
-    <h3>${article.title}</h3>
     <p>${article.date}</p>
-    <img src="${article.imgSrc}" alt="${article.imgAlt}">
-    <p>${article.description}</p>
     <p>Ages: ${article.ages}</p>
     <p>Genre: ${article.genre}</p>
     <p>Rating: ${article.stars}</p>
@@ -39,4 +36,15 @@ function createArticle(article) {
   document.getElementById("leftAside").innerHTML += articleHTML;
 }
 
-articles.forEach((article) => createArticle(article));
+articles.forEach((article) => leftArticle(article));
+
+function middleArticle(article) {
+  const articleHTML = `
+    <h2>${article.title}</h2>
+    <img src="${article.imgSrc}" alt="${article.imgAlt}">
+    <p>${article.description}</p>
+  `;
+  document.getElementById("middleAside").innerHTML += articleHTML;
+}
+
+articles.forEach((article) => middleArticle(article));
