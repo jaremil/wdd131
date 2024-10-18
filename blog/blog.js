@@ -31,7 +31,7 @@ function leftArticle(article) {
     <p>${article.date}</p>
     <p>Ages: ${article.ages}</p>
     <p>Genre: ${article.genre}</p>
-    <p>Rating: ${article.stars}</p>
+    <p class="rating">Rating: ${article.stars}</p>
   `;
   document.getElementById("leftAside").innerHTML += articleHTML;
 }
@@ -42,7 +42,7 @@ function middleArticle(article) {
   const articleHTML = `
     <h2>${article.title}</h2>
     <img src="${article.imgSrc}" alt="${article.imgAlt}">
-    <p>${article.description}</p>
+    <p class="description">${article.description}</p>
   `;
   document.getElementById("middleAside").innerHTML += articleHTML;
 }

@@ -78,6 +78,14 @@ main {
     border-color: var(--gold);
 }
 
+.rating {
+    margin-bottom: 160%;
+}
+
+.description {
+    margin-bottom: 15%;
+}
+
 img {
     width: 100%;
     height: auto;
