@@ -15,12 +15,12 @@ nav ul {
     margin-left: 8%;
     border-top: solid;
     border-bottom: solid;
-    border-color: var(--gold);
-    
+    border-color: var(--gold);  
+    padding-right: 85px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -28,6 +28,11 @@ nav ul li a {
     color: var(--dark);
     font-size: 25px;
     color: var(--red);
+
+}
+
+a:hover{
+    color: #880f2d;
 }
 
 body {
@@ -45,10 +50,13 @@ h1 {
 h2 {
     font-family: var(--headline);
     color: var(--red);
+    font-size: 30px;
+    margin-top: 9px;
 }
 
 p {
     font-family: var(--body);
+    font-size: 18px;
 }
 
 main {
@@ -56,12 +64,19 @@ main {
     grid-template-columns: 1fr 2fr 1fr;
     gap: 20px;
     padding: 20px;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 #leftSection {
     grid-column: 1;
     border-right: solid;
     border-color: var(--gold);
+}
+
+#leftAside p {
+    text-align: right;
+    margin-right: 25px;
 }
 
 #middleSection {
@@ -76,6 +91,7 @@ main {
     color: var(--dark);
     border: solid;
     border-color: var(--gold);
+    font-weight: bold;
 }
 
 .rating {
@@ -90,6 +106,9 @@ img {
     width: 100%;
     height: auto;
     max-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -97,4 +116,15 @@ footer {
     padding: 20px;
     background-color: var(--dark);
     color: white;
+}
+
+.articleDate {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bookInfo {
+    font-weight: bold;
+    margin-bottom: 5px;
 }

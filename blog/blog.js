@@ -28,10 +28,10 @@ const articles = [
 
 function leftArticle(article) {
   const articleHTML = `
-    <p>${article.date}</p>
-    <p>Ages: ${article.ages}</p>
-    <p>Genre: ${article.genre}</p>
-    <p class="rating">Rating: ${article.stars}</p>
+    <p class="articleDate">${article.date}</p>
+    <p class="bookInfo">${article.ages}</p>
+    <p class="bookInfo">${article.genre}</p>
+    <p>${article.stars}</p>
   `;
   document.getElementById("leftAside").innerHTML += articleHTML;
 }
