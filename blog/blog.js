@@ -23,28 +23,64 @@ const articles = [
     ages: "12-16",
     genre: "Fantasy",
     stars: "⭐⭐⭐⭐",
-  },
+  }
 ];
 
-function leftArticle(article) {
-  const articleHTML = `
+function renderArticle(article, position) {
+  let articleHTML;
+
+  if (position === "left") {
+    articleHTML = `
+      <p class="articleDate">${article.date}</p>
+      <p class="bookInfo">${article.ages}</p>
+      <p class="bookInfo">${article.genre}</p>
+      <p>${article.stars}</p>
+    `;
+    document.getElementById("leftAside").innerHTML += articleHTML;
+  } else if (position === "middle") {
+    articleHTML = `
+      <h2>${article.title}</h2>
+      <img src="${article.imgSrc}" alt="${article.imgAlt}">
+      <p class="description">${article.description}</p>
+    `;
+    document.getElementById("middleAside").innerHTML += articleHTML;
+  }
+}
+
+articles.forEach((article) => {
+  renderArticle(article, "left");
+  renderArticle(article, "middle");
+});
+
+const container = document.getElementById("articlesContainer");
+
+articles.forEach((article) => {
+  const articleRow = document.createElement("div");
+  articleRow.classList.add("articleRow"); 
+
+  const leftHTML = `
     <p class="articleDate">${article.date}</p>
     <p class="bookInfo">${article.ages}</p>
     <p class="bookInfo">${article.genre}</p>
     <p>${article.stars}</p>
   `;
-  document.getElementById("leftAside").innerHTML += articleHTML;
-}
 
-articles.forEach((article) => leftArticle(article));
-
-function middleArticle(article) {
-  const articleHTML = `
+  const middleHTML = `
     <h2>${article.title}</h2>
     <img src="${article.imgSrc}" alt="${article.imgAlt}">
     <p class="description">${article.description}</p>
   `;
-  document.getElementById("middleAside").innerHTML += articleHTML;
-}
 
-articles.forEach((article) => middleArticle(article));
+  const leftDiv = document.createElement("div");
+  leftDiv.classList.add("leftAside");
+  leftDiv.innerHTML = leftHTML;
+
+  const middleDiv = document.createElement("div");
+  middleDiv.classList.add("middleAside");
+  middleDiv.innerHTML = middleHTML;
+
+  articleRow.appendChild(leftDiv);
+  articleRow.appendChild(middleDiv);
+
+  container.appendChild(articleRow);
+});
