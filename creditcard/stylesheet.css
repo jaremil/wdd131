@@ -1,0 +1,43 @@
+:root {
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, san-serif;
+    --grey: #bcceeb;
+    --blue: #4d8ef7;
+    --dark-blue: #021f4f;
+}
+
+.cardFront {
+    box-shadow: var(--dark-blue);
+}
+
+.numberInput {
+
+}
+
+.holderInput {
+
+}
+
+.expirationInput {
+
+}
+
+.cardBack {
+
+}
+
+.backInput {
+
+}
+
+.submitForm {
+
+}
+
+.submitButton {
+
+}
+
+.submitButton:hover {
+
+}
