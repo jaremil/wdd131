@@ -1,14 +1,22 @@
 :root {
     --primary-font: Arial, Helvetica, sans-serif;
-    --secondary-font: Mooli, san-serif;
     --grey: #bcceeb;
-    --blue: #4d8ef7;
+    --grey-hover: white;
     --dark-blue: #021f4f;
+    --dark-blue-hover: #013487;
 }
 
 .cardFront {
-    box-shadow: var(--dark-blue);
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    font-family: var(--primary-font);
+    border-radius: 5px;
+    width: 380px;
+    height: 250px;
 }
+
+
 
 .numberInput {
 
@@ -22,22 +30,47 @@
 
 }
 
+/* Card front and card back elements are placed using CSS grid to achieve the layout specified in the mockup */
+
+/* - The use of z-index or HTML element ordering to ensure the back is behind the front */
+
 .cardBack {
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    font-family: var(--primary-font);
+    border-radius: 5px;
+    width: 380px;
+    height: 250px;
+    margin-top: 10%;
 
 }
 
 .backInput {
+    margin-right: 15%;
+    text-align: right;
+    vertical-align:text-bottom
 
 }
 
-.submitForm {
+/* submit button css is finished */
 
+.submitForm {
+    text-align: right;
+    margin-right: 25%;
 }
 
 .submitButton {
-
+    background-color: var(--dark-blue-hover);
+    color: var(--grey-hover);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 .submitButton:hover {
-
+    background-color: var(--dark-blue);
+    color: var(--grey);
 }
