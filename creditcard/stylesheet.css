@@ -7,6 +7,7 @@
 }
 
 .cardFront {
+    display: grid;
     background-color: var(--grey);
     color: var(--dark-blue);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
@@ -16,25 +17,35 @@
     height: 250px;
 }
 
-
+img {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 100px;
+    padding-top: 10px;
+}
 
 .numberInput {
-
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 30px;
 }
 
 .holderInput {
-
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 30px;
 }
 
 .expirationInput {
-
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 
-/* Card front and card back elements are placed using CSS grid to achieve the layout specified in the mockup */
-
-/* - The use of z-index or HTML element ordering to ensure the back is behind the front */
-
 .cardBack {
+    z-index: -1;
+    display: grid;
     background-color: var(--grey);
     color: var(--dark-blue);
     font-family: var(--primary-font);
@@ -42,17 +53,18 @@
     width: 380px;
     height: 250px;
     margin-top: 10%;
-
 }
 
 .backInput {
     margin-right: 15%;
     text-align: right;
-    vertical-align:text-bottom
+    vertical-align: text-bottom;
+    grid-column: 2;
+    grid-row: 5;
+    padding-left: 10px;
 
+    
 }
-
-/* submit button css is finished */
 
 .submitForm {
     text-align: right;
