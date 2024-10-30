@@ -24,6 +24,7 @@
         <section class="numberInput">
           <p>Card Number</p>
           <input
+            class = "numberButton"
             type="tel"
             placeholder="0000 0000 0000 0000"
             required
@@ -37,6 +38,7 @@
         <section class="holderInput">
           <p>Card Holder</p>
           <input
+            class ="holderButton"
             type="text"
             placeholder="Forename Surname"
             name="cc-name"
@@ -48,21 +50,30 @@
         <section class="expirationInput">
           <p>Expiration</p>
           <input
+            class="expirationButton"
             type="text"
-            placeholder="MM/YY"
-            required
-            pattern="^(0[1-9]|1[0-2])\/\d{2}$"
-            maxlength="5"
+            placeholder="MM"
+            pattern="(0[1-9]|1[0-2])"
+            maxlength="2"
             autocomplete="cc-exp"
             inputmode="numeric"
           />
+          <input class="expirationButton"
+          type="text"
+          placeholder="YY"
+          pattern="\d{2}$"
+          maxlength="2"
+          autocomplete="cc-exp"
+          inputmode="numeric"
+        />
         </section>
       </form>
 
       <form class="cardBack">
+        <div></div>
         <section class="backInput">
           <p>CVC / CVV</p>
-          <input type="tel" placeholder="XXX" />
+          <input class="backinputButton" type="tel" placeholder="XXX" />
         </section>
       </form>
 
