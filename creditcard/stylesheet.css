@@ -1,103 +1,92 @@
 :root {
-    --primary-font: Arial, Helvetica, sans-serif;
-    --grey: #bcceeb;
-    --grey-hover: white;
-    --dark-blue: #021f4f;
-    --dark-blue-hover: #013487;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --grey: #bcceeb;
+  --grey-hover: white;
+  --dark-blue: #021f4f;
+  --dark-blue-hover: #013487;
 }
 
-.front { 
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 1fr;
-    max-width: 500px;
-    margin: 0 auto;
+.cardStack {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .cardFront {
-    z-index: 2;
-    display: grid;
-    background-color: var(--grey);
-    color: var(--dark-blue);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    font-family: var(--primary-font);
-    border-radius: 5px;
-    
-
-
-    grid-column: 1/4;
-    grid-row: 1/3;
-}
-
-.cardBack {
-    z-index: 1;
-    display: grid;
-    background-color: var(--grey);
-    color: var(--dark-blue);
-    font-family: var(--primary-font);
-    border-radius: 5px;
-
-    grid-column: 2/5;
-    grid-row: span 2 / 4;
+  z-index: 2;
+  display: grid;
+  background-color: var(--grey);
+  color: var(--dark-blue);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  font-family: var(--primary-font);
+  border-radius: 5px;
+  grid-column: 1/4;
+  grid-row: 1/3;
 }
 
 img {
-    grid-column: 2;
-    grid-row: 1;
-    padding-left: 100px;
-    padding-top: 10px;
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 100px;
+  padding-top: 10px;
 }
 
 .numberInput {
-    grid-column: 1;
-    grid-row: 2;
-    padding-left: 30px;
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 30px;
 }
 
 .holderInput {
-    grid-column: 1;
-    grid-row: 3;
-    padding-left: 30px;
+  grid-column: 1;
+  grid-row: 3;
+  padding-left: 30px;
 }
 
 .expirationInput {
-    grid-column: 2;
-    grid-row: 3;
-    padding-left: 10px;
-    padding-bottom: 20px;
+  grid-column: 2;
+  grid-row: 3;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 
-
+.cardBack {
+  z-index: 1;
+  display: grid;
+  background-color: var(--grey);
+  color: var(--dark-blue);
+  font-family: var(--primary-font);
+  border-radius: 5px;
+  grid-column: 2/5;
+  grid-row: span 2 / 4;
+}
 
 .backInput {
-    margin-right: 15%;
-    text-align: right;
-    vertical-align: text-bottom;
-    grid-column: 2;
-    grid-row: 5;
-    padding-left: 10px;    
-}
-
-.submitForm {
-    text-align: right;
-    margin-right: 25%;
-    
+  margin-right: 15%;
+  text-align: right;
+  vertical-align: text-bottom;
+  grid-column: 2;
+  grid-row: 5;
+  padding-left: 10px;
 }
 
 .submitButton {
-    background-color: var(--dark-blue-hover);
-    color: var(--grey-hover);
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    width: 90px;
-    height: 40px;
-    margin-top: 10px;
-    grid-column: 4/5;
-    grid-row: 4/5;
+  background-color: var(--dark-blue-hover);
+  color: var(--grey-hover);
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  grid-column: 4/5;
+  grid-row: 4/5;
 }
 
 .submitButton:hover {
-    background-color: var(--dark-blue);
-    color: var(--grey);
+  background-color: var(--dark-blue);
+  color: var(--grey);
 }
