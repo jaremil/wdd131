@@ -12,11 +12,8 @@ function counting() {
     document.getElementById("submission").innerHTML = `Participants: ${submissionCount}`;
 }
 
-document.getElementById("add").addEventListener("click", counting);
+document.getElementById("add").addEventListener("click", counting());
 
 const el = document.querySelector(".participant1");
 let temp = el.outerHTML;
-temp = temp.replace("1", count);
-
-// Code above works but check rubric if it counts
-
+temp = temp.replace("1", counting(participantsCount));
