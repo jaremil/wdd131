@@ -4,16 +4,57 @@
     <meta charset="UTF-8" />
     <title>Recipe Book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="discription" content="Jade Miller's Recipe Book  for the WDD131 course." />
+    <meta name="description" content="Jade Miller's Recipe Book  for the WDD131 course." />
     <meta name="author" content="Jade Miller" />
     <link rel="icon" type="image/x-icon" href="/creditcard/ccFavcon.jpg" />
-    <link rel="stylesheet" href="recipe.css" />
+    <link rel="stylesheet" href="recipes.css" />
     <meta property="og:title" content="Recipe Book">
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Jade Miller's Recipe Book  for the WDD131 course.">
+    <meta property="og:image" content="images/recipe-book.png">
     <meta property="og:url" content="https://jaremil.github.io/wdd131/recipes/index.html">
+    <meta name="twitter:card" content="images/recipe-book.png">
   </head>
   <body>
+    <header>
+      <img class="headerImg" src="images/recipe-book.png" />
+      <h1>Recipe Book</h1>
+    </header>
+    <main>
+      <section class="search">
+      <input class="searchBar" type="text" placeholder="Search here" >
+      <button ><img class="searchImg" src="images/search.svg"/></button>
+      </section>
 
+      <section class="recipeDisplay">
+        <div id="contentRecipe"></div>
+        <p>Recipe details will go here</p>
+
+        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">⭐</span>
+          <span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>
+
+      </section>
+    </main>
+    <footer>
+      <div>
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <section class="social">
+        <a href="#"
+          ><img src="images/instagram_icon.svg" alt="instagram icon"
+        /></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
+        <a href="#"
+          ><img src="images/pinterest_icon.svg" alt="pinterest icon"
+        /></a>
+      </section>
+      <a class="flaticonLink" href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+      </div>
+    </footer>
   </body>
   <script scr="main.js"></script>
 </html>

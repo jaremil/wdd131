@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+:root {
+  --primary-color: #1b98e0;
+  --secondary-color: #59c3c3;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: "Amatic SC";
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+main {
+  margin: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5%;
+  padding-bottom: 0%;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: var(--secondary-font);
+}
+
+.headerImg {
+  width: 120px;
+}
+
+main {
+  display: block;
+  justify-content: center;
+  margin-top: 0%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 5%;
+  border-style: none none solid none;
+}
+
+.searchImg {
+  width: 10px;
+}
+
+.searchBar {
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.recipeDisplay {
+  border: var(--text-dark);
+  border-style: solid;
+  padding: 1%;
+  width: 90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flaticonLink {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+}
+
+@media screen and (min-width: 800px) {
+
+  .social {
+    position: absolute;
+    right: 0;
+    margin-right: 155px;
+  }
+
+  .flaticonLink {
+    position: absolute;
+    left: 0;
+    margin-left: 155px;
+  }
+
+  footer img {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2%;
+  }
+
+  .flaticonLink {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  footer img {
+    width: 50px;
+    margin: 4px;
+  }
+}
