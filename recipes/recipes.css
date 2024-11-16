@@ -161,11 +161,11 @@ button {
     grid-column: 1;
   }
 
-  .secondColumn {
+  /* .secondColumn {
     display: grid;
     grid-column: 2;
     grid-column-start: 2;
-  }
+  } */
 
   .recipeName {
     font-size: 50px;
