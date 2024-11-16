@@ -99,6 +99,10 @@ button {
   border: 1px solid var(--text-dark);
   border-radius: 5px;
   word-wrap: break-word;
+
+}
+
+.sectionTag {
   margin-left: 20px;
   display: flex;
   align-items: flex-start;
@@ -115,18 +119,17 @@ button {
   text-align: left;
 }
 
+.recipeRating {
+  margin-top: -40px;
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-start;
+}
 
-  .recipeRating {
-    margin-top: -40px;
-    margin-left: 20px;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .recipeDescription {
-    text-align: left;
-    margin-left: 20px;
-  }
+.recipeDescription {
+  text-align: left;
+  margin-left: 20px;
+}
 
 @media screen and (min-width: 800px) {
   .social {
@@ -147,7 +150,7 @@ button {
 
   .recipeDisplay {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
