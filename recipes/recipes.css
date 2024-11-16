@@ -99,12 +99,34 @@ button {
   border: 1px solid var(--text-dark);
   border-radius: 5px;
   word-wrap: break-word;
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .recipeName {
   font-family: var(--secondary-font);
   color: var(--primary-color);
+  margin-top: 10px;
+  font-size: 300%;
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
 }
+
+
+  .recipeRating {
+    margin-top: -40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .recipeDescription {
+    text-align: left;
+    margin-left: 20px;
+  }
 
 @media screen and (min-width: 800px) {
   .social {
@@ -125,7 +147,7 @@ button {
 
   .recipeDisplay {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
     gap: 10px;
   }
 
@@ -137,33 +159,25 @@ button {
   }
 
   .secondColumn {
-    background-color: lightgreen;
+    display: grid;
     grid-column: 2;
-  }
-
-  .sectionTag {
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-end;
+    grid-column-start: 2;
   }
 
   .recipeName {
-    font-size: 300%;
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-end;
+    font-size: 50px;
+    grid-column: 2;
+  }
+  .sectionTag {
+    grid-column: 2;
   }
 
   .recipeRating {
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-end;
+    grid-column: 2;
   }
 
   .recipeDescription {
-    margin-left: 20px;
-    display: flex;
-    justify-content: flex-end;
+    grid-column: 2;
   }
 }
 
@@ -199,28 +213,6 @@ button {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .sectionTag {
-    margin-left: 20px;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .recipeName {
-    margin-top: 10px;
-    font-size: 300%;
-    margin-left: 20px;
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .recipeRating {
-    margin-top: -40px;
-    margin-left: 20px;
-    display: flex;
-    align-items: flex-start;
   }
 
   .recipeDescription {
