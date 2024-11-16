@@ -51,9 +51,10 @@ main {
   width: 10px;
 }
 
-button {
+/* button {
   height: 20px;
-}
+  background-color: white;
+} */
 
 .searchBar {
   justify-content: center;
@@ -71,10 +72,6 @@ footer {
 .flaticonLink {
   color: var(--primary-color);
   text-decoration: none;
-}
-
-button {
-  background-color: white;
 }
 
 .recipeDisplay {
