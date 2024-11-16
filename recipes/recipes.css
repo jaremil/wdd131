@@ -170,17 +170,21 @@ button {
   .recipeName {
     font-size: 50px;
     grid-column: 2;
+    grid-column-start: 2;
   }
   .sectionTag {
     grid-column: 2;
+    grid-column-start: 2;
   }
 
   .recipeRating {
     grid-column: 2;
+    grid-column-start: 2;
   }
 
   .recipeDescription {
     grid-column: 2;
+    grid-column-start: 2;
   }
 }
 
