@@ -21,10 +21,12 @@ function starRating(recipe) {
 function displayRecipe(recipe) {
     let recipeHTML = `
         <img class="recipeImg" src="${recipe.image}">
-        <p class="recipeTag">${recipe.tags}</p>
+        <section class="secondColumn">
+        <section class="sectionTag"><p class="recipeTag">${recipe.tags}</p></section>
         <p class="recipeName">${recipe.name}</p>
         <p class="recipeRating">${starRating(recipe)}</p>
         <p class="recipeDescription">${recipe.description}</p>
+        </section>
     `;
     document.getElementById("contentRecipe").innerHTML += recipeHTML;
 }
