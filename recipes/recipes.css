@@ -235,3 +235,10 @@ footer {
     visibility: hidden;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .sectionTag {
+    margin-left: 0px;
+
+  }
+}
