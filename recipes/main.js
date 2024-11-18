@@ -28,9 +28,14 @@ function displayRecipe(recipe) {
         <p class="recipeDescription">${recipe.description}</p>
         </section>
     `;
-    document.getElementById("contentRecipe").innerHTML += recipeHTML;
+    document.querySelector(".recipeDisplay").innerHTML += recipeHTML;
 }
 
-recipes.forEach((recipe) => {
-    displayRecipe(recipe);
-});
+displayRecipe(recipes[0]);
+
+
+
+
+
+
+
