@@ -20,7 +20,7 @@ function starRating(recipe) {
 
 function displayRecipe(recipe) {
     let recipeHTML = `
-        <img class="recipeImg" src="${recipe.image}">
+        <img class="recipeImg" src="${recipe.image}" alt="Recipe Image">
         <section class="secondColumn">
         <section class="sectionTag"><p class="recipeTag">${recipe.tags}</p></section>
         <p class="recipeName">${recipe.name}</p>
