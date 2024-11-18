@@ -236,7 +236,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .sectionTag {
     margin-left: 0px;
 
