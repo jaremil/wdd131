@@ -1,30 +1,23 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Outfit:wght@500&display=swap');
 
 
 :root {
-  /* change the values below to your colors from your palette */
   --primary-color: #010528;
   --secondary-color: #D7DBFE;
   --accent1-color: #B1B9FB;
   --accent2-color: #5161F6;
 
-  /* change the values below to your chosen font(s) */
   --heading-font: Outfit, sans-serif;
   --paragraph-font: Commissioner, "Trebuchet MS", sans-serif;
 
-  /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(
     --primary-color
-  ); /* headlines on a white background */
-  --headline-color-on-color: white; /* headlines on a colored background */
+  );
+  --headline-color-on-color: white;
   --paragraph-color-on-white: var(
     --primary-color
-  ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  ); 
+  --paragraph-color-on-color: white;
   --paragraph-background-color: var(--primary-color);
   --nav-link-color: var(--primary-color);
   --nav-background-color: var(--secondary-color);
