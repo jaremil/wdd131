@@ -281,5 +281,3 @@ const recipes = [
 ]
 
 export default recipes
-
-// Above is the given code

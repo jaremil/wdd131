@@ -39,27 +39,34 @@ main {
   margin-top: 0%;
 }
 
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 5%;
-  border-style: none none solid none;
-}
-
-.searchImg {
-  width: 10px;
-}
-
-/* button {
-  height: 20px;
-  background-color: white;
-} */
-
 .searchBar {
-  justify-content: center;
-  width: 90%;
-  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#searchButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#searchButton img {
+  width: 24px;
+  height: 24px;
+}
+
+#searchButton img:hover {
+  filter: brightness(1.2);
 }
 
 footer {
