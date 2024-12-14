@@ -129,6 +129,28 @@
   #missionStatement {
     display: unset;
   }
+
+  #aboutMe {
+    display: block;
+    margin: 20px;
+  }
+
+  .about_title {
+    grid-row: auto; 
+    grid-column: auto;
+    margin-bottom: 10px; 
+  }
+
+  #aboutMe p {
+    grid-row: auto;
+    grid-column: auto;
+    text-align: left;
+    padding: 10px; 
+  }
+
+  .aboutImg {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 450px){
@@ -140,6 +162,9 @@
     max-width: 300px;
     max-height: 350px;
     margin: 0 auto;
+  }
+  p span {
+    font-size: 10px;
   }
 }
 
@@ -167,11 +192,6 @@
     align-items: center;
     justify-content: center;
   } 
-
-  .aboutImg{
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -191,18 +211,10 @@
   #mission_title {
     padding-bottom: 0;
   }
-
- #missionStatement p{
-  font-size: large
- } 
 }
 
 @media (max-width:1075px) {
   #mission_title {
     padding-bottom: 0;
   }
-
- #missionStatement p{
-  font-size:medium;
- } 
 }
