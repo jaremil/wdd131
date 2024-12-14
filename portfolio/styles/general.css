@@ -43,7 +43,7 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+label {
   font-family: var(--heading-font);
   display: block;
   margin-left: auto;
@@ -52,7 +52,7 @@ h2 {
   margin-bottom: 50px;
 }
 
-h3 {
+h2 {
   font-family: var(--heading-font);
   margin-top: 50px;
   margin-bottom: 50px;
