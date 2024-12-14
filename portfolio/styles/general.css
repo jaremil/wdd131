@@ -43,6 +43,14 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-family: var(--heading-font);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
 p,
 span {
   font-family: var(--paragraph-font);
@@ -90,10 +98,19 @@ body[data-theme="dark"] .navBar:hover {
   color: var(--accent2-color);
 }
 
-body[data-theme="light"] .navBar:hover .changeToggle {
+body[data-theme="light"] .navBar:hover{
   color: var(--accent2-color);
 }
 
 body[data-theme="dark"] #changeToggle {
   color: black;
+}
+
+body[data-theme="light"] .website-card {
+  border: 1px solid black;
+}
+
+body[data-theme="dark"] .website-card {
+  border: 1px solid var(--accent1-color);
+
 }

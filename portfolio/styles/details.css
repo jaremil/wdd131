@@ -121,19 +121,6 @@ nav ul li a {
   padding: 10px;
 }
 
-.changeToggle {
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 25px auto 0;
-  padding: 0;
-  font-size: 15px;
-  border-radius: 50px;
-}
-
 .navBar:hover {
   color: var(--accent2-color);
 }
@@ -230,4 +217,46 @@ a.socialButton {
   grid-column: 1;
   grid-row: 2/3;
   padding: 10px 50px;
+}
+
+.website-card {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+tech-summary {
+  display:flex;
+}
+
+/* filters*/
+
+.filterToggle {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border: solid;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  color: black;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.filterToggle:hover {
+  color: var(--accent2-color);
+  border-color: var(--accent2-color);
+}
+
+#category-filter {
+  margin-top: 10%;
+}
+
+.changeToggle {
+  font-weight: bold;
+  font-size: 15px;
 }

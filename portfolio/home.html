@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/details.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <script src="scripts/portfolio.js" defer></script>
     <script src="scripts/smoothscroll.js" defer></script>
     <script src="scripts/theme.js" defer></script>
+    <script src="scripts/app.js" ></script>
+    <script src="scripts/data.js" ></script>
+    <script src="scripts/filter.js" ></script>
+    <script src="scripts/portfolio.js" ></script>
+    <script src="scripts/smoothscroll.js" ></script>
+    <script src="scripts/theme.js" ></script>
     <title>Jade Miller, Portfolio</title>
   </head>
 
@@ -34,7 +39,7 @@
           </li>
           <li><a class="navBar" href="childpage.html">Resume</a></li>
           <li>
-            <select id="changeToggle" class="navBar">
+            <select id="changeToggle" class="filterToggle">
               <option value="light">Light</option>
               <option value="dark">Dark</option>
             </select> 
@@ -150,14 +155,41 @@
 
       <section id="searchFunctions">
         <h1>Search Through Different Projects</h1>
+        <div>
+          <h2 for="category-filter">Filter by Category:</h2>
+          <select id="category-filter" class="filterToggle">
+            <option value="">All</option>
+            <option value="Personal">Personal</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Content">Content</option>
+            <option value="Utility">Utility</option>
+          </select>
+
+          <h2 for="technology-filter">Filter by Technology:</h2>
+          <select id="technology-filter" class="filterToggle">
+            <option value="">All</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="React">React</option>
+            <option value="Node.js">Node.js</option>
+            <option value="C#">C#</option>
+          </select>
+
+          <button id="apply-filters" class="filterToggle">Apply Filters</button>
+
+        </div>
+        <div id="websites-container"></div>
+        <h1>Technology Summary</h1>
+        <div id="tech-summary"></div>
       </section>
     </main>
-
     <footer>
       <section class="footer_text">
         <p class="footer_text">Phone: (208) 931-3959</p>
         <p class="footer_text">Email: 1jaremil1@gmail.com</p>
       </section>
     </footer>
+    <script type="module" src="scripts/app.js"></script>
   </body>
 </html>
