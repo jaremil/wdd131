@@ -178,19 +178,20 @@ a.socialButton {
   width: 400px;
   height: 500px;
   background-image: url(".images/jademiller.webp");
-  transition: background-image 1s ease;
+  /* transition: background-image 1s ease; */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .aboutImg:hover {
-  background-image: url("images/family.jpg");
+  background-image: url(".images/family.jpg");
 }
 
 .resume {
   width: 70%;
 }
+
 /* Body sections */
 
 #about_section{
