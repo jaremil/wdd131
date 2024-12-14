@@ -177,9 +177,11 @@ a.socialButton {
 .aboutImg {
   width: 400px;
   height: 500px;
-  background-image: url(".\images/jademiller.webp");
-  background-size: cover;
+  background-image: url(".images/jademiller.webp");
   transition: background-image 1s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutImg:hover {
