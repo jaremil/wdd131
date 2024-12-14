@@ -33,14 +33,16 @@
 }
 
 @media (max-width: 550px) {
-   #info h1{
-    margin-top: 110%;
-   }
+
 }
 
 @media (max-width: 768px) {
   .socialButton {
     margin: 10px 5px;
+  }
+
+  .mission_title {
+    margin-top: 150%;
   }
 
   nav ul {
@@ -55,11 +57,6 @@
   }
 }
 
-@media (max-width: 680px) {
-  .mission_title {
-    margin-top: 20%;
-  }
-}
 
 @media (max-width: 800px) {
   .about_title{ 

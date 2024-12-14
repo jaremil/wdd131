@@ -19,6 +19,24 @@ body {
   line-height: 1.6;
 }
 
+body[data-theme="dark"] {
+  background-color: black;
+  color: white;
+}
+
+body[data-theme="light"] {
+  background-color: white;
+  color: #333;
+}
+
+/* .socialButton_about {
+  width: 15%;
+  background: white;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+} */
+
 main {
   text-align: center;
   margin: 5%;
