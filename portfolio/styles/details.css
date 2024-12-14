@@ -77,7 +77,7 @@
 /* Navigation */
 
 .navBar {
-  font-size: 16px;
+  font-size: 20px;
   font-family: var(--heading-font);
   font-weight: 500;
   text-decoration: none;
@@ -177,15 +177,18 @@ a.socialButton {
 .aboutImg {
   width: 400px;
   height: 500px;
-  background-image: url("/images/jademiller.webp");
+  background-image: url(".\images/jademiller.webp");
   background-size: cover;
   transition: background-image 1s ease;
 }
 
 .aboutImg:hover {
-  background-image: url("/images/family.jpg");
+  background-image: url("images/family.jpg");
 }
 
+.resume {
+  width: 70%;
+}
 /* Body sections */
 
 #about_section{
@@ -210,6 +213,7 @@ a.socialButton {
   padding: 10px 50px;
 }
 
+/* 
 #definition_section{
   display: grid;
   grid-template-columns: .5fr 1fr ;
@@ -233,4 +237,4 @@ a.socialButton {
 
  #packages_section{
   text-align: center;  
- }
+ } */
