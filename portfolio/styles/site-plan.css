@@ -1,22 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Outfit:wght@500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Outfit:wght@500&display=swap");
 
 :root {
   --primary-color: #010528;
-  --secondary-color: #D7DBFE;
-  --accent1-color: #B1B9FB;
-  --accent2-color: #5161F6;
+  --secondary-color: #d7dbfe;
+  --accent1-color: #b1b9fb;
+  --accent2-color: #5161f6;
 
   --heading-font: Outfit, sans-serif;
   --paragraph-font: Commissioner, "Trebuchet MS", sans-serif;
 
-  --headline-color-on-white: var(
-    --primary-color
-  );
+  --headline-color-on-white: var(--primary-color);
   --headline-color-on-color: white;
-  --paragraph-color-on-white: var(
-    --primary-color
-  ); 
+  --paragraph-color-on-white: var(--primary-color);
   --paragraph-color-on-color: white;
   --paragraph-background-color: var(--primary-color);
   --nav-link-color: var(--primary-color);
@@ -85,7 +80,7 @@ p {
   height: 3em;
 }
 
-.primary { 
+.primary {
   color: white;
   background-color: var(--primary-color);
 }

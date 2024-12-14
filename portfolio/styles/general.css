@@ -95,7 +95,7 @@ body[data-theme="light"] {
 }
 
 body[data-theme="dark"] .navBar {
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
 }
 
 body[data-theme="light"] .navBar {
@@ -106,7 +106,7 @@ body[data-theme="dark"] .navBar:hover {
   color: var(--accent2-color);
 }
 
-body[data-theme="light"] .navBar:hover{
+body[data-theme="light"] .navBar:hover {
   color: var(--accent2-color);
 }
 
@@ -120,5 +120,4 @@ body[data-theme="light"] .website-card {
 
 body[data-theme="dark"] .website-card {
   border: 1px solid var(--accent1-color);
-
 }

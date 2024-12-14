@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Outfit:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Outfit:wght@500&display=swap");
 
 :root {
   --primary-color: #010528;
-  --secondary-color: #D7DBFE;
-  --accent1-color: #B1B9FB;
-  --accent2-color: #5161F6;
+  --secondary-color: #d7dbfe;
+  --accent1-color: #b1b9fb;
+  --accent2-color: #5161f6;
   --heading-font: Outfit, sans-serif;
   --paragraph-font: Commissioner, "Trebuchet MS", sans-serif;
 }
@@ -131,12 +131,12 @@ nav ul li a {
 
 @keyframes underline_nav {
   from {
-      width: 0;
-      background-color: var(--secondary-color);
+    width: 0;
+    background-color: var(--secondary-color);
   }
   to {
-      width: 100%;
-      background-color: var(--accent2-color);
+    width: 100%;
+    background-color: var(--accent2-color);
   }
 }
 
@@ -180,9 +180,9 @@ a.socialButton {
   height: 375px;
   background-image: url("../images/jademiller.webp");
   transition: background-image 1s ease;
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -201,19 +201,19 @@ a.socialButton {
 
 /* Body sections */
 
-#aboutMe{
+#aboutMe {
   display: grid;
   margin: -50px;
   margin-top: 50px;
   margin-bottom: 50px;
-  grid-template-rows: .5fr 5fr;
-  grid-template-columns: 1fr .5fr ;
+  grid-template-rows: 0.5fr 5fr;
+  grid-template-columns: 1fr 0.5fr;
 }
-.about_title{ 
+.about_title {
   grid-row: 1/2;
   grid-column: 1/2;
 }
-#aboutMe p{
+#aboutMe p {
   grid-column: 1;
   grid-row: 2/3;
   padding: 10px 50px;
@@ -225,7 +225,7 @@ a.socialButton {
 }
 
 tech-summary {
-  display:flex;
+  display: flex;
 }
 
 /* filters*/
