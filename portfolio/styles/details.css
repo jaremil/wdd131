@@ -177,13 +177,13 @@ a.socialButton {
 .aboutImg {
   width: 400px;
   height: 500px;
-  background-image: url("");
+  background-image: url("/images/jademiller.webp");
   background-size: cover;
   transition: background-image 1s ease;
 }
 
 .aboutImg:hover {
-  background-image: url("");
+  background-image: url("/images/family.jpg");
 }
 
 /* Body sections */
