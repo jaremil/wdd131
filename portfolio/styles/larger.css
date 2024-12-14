@@ -9,7 +9,7 @@
   --paragraph-font: Commissioner, "Trebuchet MS", sans-serif;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) {  
   .socialImg {
     width: 18px;
     height: 18px;
@@ -30,13 +30,13 @@
   .text2 {
     animation: none;
   }
-
-  .about_title {
-    padding-top: 100%;
-  }
 }
 
 @media (max-width: 768px) {
+  .mission_title {
+    padding-top: 100%;
+  }
+
   .socialButton {
     margin: 10px 5px;
   }
@@ -54,8 +54,8 @@
 }
 
 @media (max-width: 680px) {
-  .about_title {
-    margin-top: 45%;
+  .mission_title {
+    margin-top: 20%;
   }
 }
 
@@ -126,13 +126,13 @@
     align-items: center;
   }
 
-  .about_section{
+  #missionStatement {
     display: unset;
   }
 }
 
 @media (max-width: 450px){
-  #about_section{
+  #missionStatement{
     margin: 20px auto;
     font-size:small; 
   }
@@ -161,11 +161,13 @@
   .row {
     font-size: 80%;
   }
-  #about_section {
+
+  #missionStatement {
     display: block;
     align-items: center;
     justify-content: center;
   } 
+
   .aboutImg{
     display: block;
     margin: 0 auto;
@@ -186,20 +188,21 @@
 }
 
 @media (max-width:1400px) {
-  #about_title {
+  #mission_title {
     padding-bottom: 0;
   }
 
- #about_section p{
+ #missionStatement p{
   font-size: large
  } 
 }
 
 @media (max-width:1075px) {
-  #about_title {
+  #mission_title {
     padding-bottom: 0;
   }
- #about_section p{
+
+ #missionStatement p{
   font-size:medium;
  } 
 }
