@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Outfit:wght@500&display=swap');
+
+:root {
+  --primary-color: #010528;
+  --secondary-color: #D7DBFE;
+  --accent1-color: #B1B9FB;
+  --accent2-color: #5161F6;
+  --heading-font: Outfit, sans-serif;
+  --paragraph-font: Commissioner, "Trebuchet MS", sans-serif;
+}
+
+/* Title Animation */
+
+.container {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.row {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.text1 {
+  font-family: var(--heading-font);
+  display: block;
+  color: var(--accent2-color);
+  font-size: 650%;
+  animation: text1 3s 1;
+  text-align: center;
+}
+
+.text2 {
+  font-family: var(--heading-font);
+  font-size: 200%;
+  color: var(--accent2-color);
+  animation: text2 3s 1;
+  word-spacing: 75px;
+}
+
+@keyframes text1 {
+  0% {
+    margin-bottom: 5px;
+  }
+  30% {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    color: var(--accent1-color);
+  }
+  85% {
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes text2 {
+  0% {
+    word-spacing: 0px;
+    color: var(--secondary-color);
+  }
+
+  50% {
+    word-spacing: 3px;
+    margin-bottom: -10px;
+  }
+  85% {
+    word-spacing: 5px;
+    color: var(--accent1-color);
+  }
+}
+
+/* Navigation */
+
+.navBar {
+  font-size: 16px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+.navBar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.navBar:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navBar:hover {
+  color: var(--accent2-color);
+}
+
+.navBar:hover::after {
+  animation: underline_nav 0.4s ease-in-out forwards;
+}
+
+@keyframes underline_nav {
+  from {
+      width: 0;
+      background-color: var(--secondary-color);
+  }
+  to {
+      width: 100%;
+      background-color: var(--accent2-color);
+  }
+}
+
+/* Navigation Smooth Scroll to Sections */
+
+#section1 {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Social Media Links */
+
+.socialButton {
+  margin: 0 5px;
+  border: none;
+  width: 15%;
+  padding: 0;
+}
+
+a.socialButton {
+  padding: -10px;
+  align-items: center;
+}
+
+.socialImg {
+  margin-top: 10px;
+  padding: 0%;
+  width: 40px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+/* Images */
+
+.aboutImg {
+  width: 400px;
+  height: 500px;
+  background-image: url("");
+  background-size: cover;
+  transition: background-image 1s ease;
+}
+
+.aboutImg:hover {
+  background-image: url("");
+}
+
+/* Body sections */
+
+#about_section{
+  display: grid;
+  margin: 50px;
+  grid-template-rows: .5fr 5fr;
+  grid-template-columns: 1fr .5fr ;
+}
+ .about_title{ 
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.aboutImg{
+  grid-row: 2/3;
+  grid-column: 2;
+}
+#about_section p{
+  grid-column: 1;
+  grid-row: 2/3;
+  text-align: center;
+  font-size:1.5em;
+  padding: 10px 50px;
+}
+
+#definition_section{
+  display: grid;
+  grid-template-columns: .5fr 1fr ;
+  margin: 0 auto;
+  background-color: #cce6c8; 
+}
+
+#definition_section h1{
+  vertical-align: middle;
+  text-align: right;
+  grid-column: 1;
+  padding: 30px 20px 30px;
+}
+
+#definition_section p{
+  grid-column: 2;
+  text-align: left;
+  font-size: large;
+  padding: 10px 20px;
+}
+
+ #packages_section{
+  text-align: center;  
+ }

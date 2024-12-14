@@ -1,37 +1,137 @@
-
-Each page of your Web site must satisfy the following requirements:
-Significant textual content, appropriate for your audience, so that they can understand the meaning and message of this site.
-
-At least one image that relates to the content of the page.
-Working links to your child page(s).
-
-Be laid out and styled according to your site plan wireframes.
-  Be valid HTML and CSS
-  Score at least 97 on Lighthouse.
-
-The site should have dynamic elements provided by Javascript, your code should show elements of the following:
-  It should show some level of organization: at a minimum it should have more than one function.
-  It should include DOM interaction: select an element, modify it, and listen for and react to events
-  Each of the following should be used: conditional branching, Objects, ES Modules, Arrays and array method usage (forEach, map, reduce, filter, etc)
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles/base.css" >
-    <link rel="stylesheet" href="styles/large.css" >
-    <link rel="stylesheet" href="styles/small.css" >
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" > 
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Jade Miller - Software Engineering Portfolio</title>
-    <meta property="og:title" content="Jade Miller - Software Engineering Portfolio" >
-    <meta property="og:type" content="website" >
-    <meta property="og:url" content="https://jaremil.github.io/wdd131/portfolio/home." >
-    <meta property="og:type" content="website">
-    <meta name="description" content="This website is designed to showcase front-end and back-end ability in a portfolio format." >
-    <meta name="author" content="Jade Miller" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jade Miller" />
+    <meta property="title" content="Jade Miller, Portfolio" />
+    <meta property="description" content="The website is a software portfolio designed to showcase Jade Miller's work. Including personal projects, collaborative work, and course-specific accomplishments." />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/details.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>Jade Miller, Portfolio</title>
   </head>
-  <body>
 
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="navBar" href="#missionStatement">Mission Statement</a></li>
+          <li>
+            <a class="navBar" href="#aboutMe">About Me</a>
+          </li>
+          <li>
+            <a class="navBar" href="#searchFunctions">Search Projects</a>
+          </li>
+          <li><a class="navBar" href="childpage.html">Resume</a></li>
+          <li>
+            <a
+              class="socialButton"
+              href="https://www.facebook.com/profile.php?id=100066191761841"
+              target="_blank"
+            >
+              <img class="socialImg" src="images/facebook.png" alt="Jade Miller's Facebook"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="socialButton"
+              href="https://www.instagram.com/jaremil/"
+              target="_blank"
+              ><img
+                class="socialImg"
+                src="images/instagram.png"
+                alt="Jade Miller's Instagram"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="socialButton"
+              href="https://www.linkedin.com/in/jade-r-miller-1ba1a4300/"
+              target="_blank"
+              ><img class="socialImg" src="images/linkedin.png" alt="Jade Miller's LinkedIn"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <span class="text1">Jade Miller, Portfolio</span>
+          <span class="text2">Full Stack Development</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="missionStatement">
+        <h1>About this Website</h1>
+        <p>
+          The website is a software portfolio designed to showcase the journey
+          and achievements of Jade Miller, highlighting both individual and team
+          projects completed during her classes. Organized with a clean and
+          responsive layout, it features links to personal projects,
+          collaborative work, and course-specific accomplishments. The portfolio
+          emphasizes progress over time, reflecting the Jade's growth,
+          creativity, and technical ability. By highlighting their progress and
+          accomplishments, the website presents a compelling story of the
+          Jade's journey and passion for creating impactful digital
+          experiences.
+        </p>
+      </section>
+
+      <section id="aboutMe">
+        <h1>About Me</h1>
+        <p>
+          I'm a student at the Brigham Young Univerity - Idaho. That univerity
+          is where I discoved my love of programming. I went into collage with
+          the plan to go into the medical feild. In my second semester, I took a
+          programming class because my brother-in-law in the Computer Science
+          field told me the imporance of understanding coding in any profession.
+          I thought it would look good on my resume but never expected that one
+          day it would completly take over my resume as well as my career
+          choices.
+        </p>
+      </section>
+
+      <a
+        class="socialButton_about"
+        href="https://www.facebook.com/profile.php?id=100066191761841"
+        target="_blank"
+      >
+        <img class="socialImg_about" src="images/facebook.png" alt="Jade Miller's Facebook" />
+      </a>
+      <a
+        class="socialButton_about"
+        href="https://www.instagram.com/jaremil/"
+        target="_blank"
+      >
+        <img
+          class="socialImg_about"
+          src="images/instagram.png"
+          alt="Jade Miller's Instagram"
+        />
+      </a>
+      <a
+        class="socialButton_about"
+        href="https://www.linkedin.com/in/jade-r-miller-1ba1a4300/"
+        target="_blank"
+      >
+        <img class="socialImg_about" src="images/linkedin.png" alt="Jade Miller's LinkedIn" />
+      </a>
+
+      <section id="searchFunctions">
+        <h1>Search Through Different Projects</h1>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer_text">
+        <p class="footer_text">Phone: (208) 931-3959</p>
+        <p class="footer_text">Email: 1jaremil1@gmail.com</p>
+      </section>
+    </footer>
+
+    <script src="scripts/portfolio.js"></script>
   </body>
 </html>

@@ -1,9 +1,85 @@
-<!-- Each page of your Web site must satisfy the following requirements:
-- Significant textual content, appropriate for your audience, so that they can understand the meaning and message of this site.
-- At least one image that relates to the content of the page.
-- Working links to your child page(s).
-- Be laid out and styled according to your site plan wireframes.
-- Be visually appealing and easily readable.
-- Be valid HTML and CSS 
-- Score at least 97 on Lighthouse. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jade Miller" />
+    <meta property="title" content="Jade Miller, Portfolio" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/details.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>Jade Miller, Portfolio</title>
+  </head>
 
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li><a class="navBar" href="home.html#missionStatement">Mission Statement</a></li>
+              <li>
+                <a class="navBar" href="home.html#aboutMe">About Me</a>
+              </li>
+              <li>
+                <a class="navBar" href="home.html#searchFunctions">Search Projects</a>
+              </li>
+              <li><a class="navBar" href="childpage.html#info">Resume</a></li>
+              <li>
+                <a
+                  class="socialButton"
+                  href="https://www.facebook.com/profile.php?id=100066191761841"
+                  target="_blank"
+                >
+                  <img class="socialImg" src="images/facebook.png" alt="Jade Miller's Facebook"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="socialButton"
+                  href="https://www.instagram.com/jaremil/"
+                  target="_blank"
+                  ><img
+                    class="socialImg"
+                    src="images/instagram.png"
+                    alt="Jade Miller's Instagram"
+                /></a>
+              </li>
+              <li>
+                <a
+                  class="socialButton"
+                  href="https://www.linkedin.com/in/jade-r-miller-1ba1a4300/"
+                  target="_blank"
+                  ><img class="socialImg" src="images/linkedin.png" alt="Jade Miller's LinkedIn"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="container">
+            <div class="row">
+              <span class="text1">Jade Miller, Portfolio</span>
+              <span class="text2">Full Stack Development</span>
+            </div>
+          </div>
+    </header>
+    <main>
+      <section id="info">
+        <h1></h1>
+        <p>
+          Here is my resume, this shows my progress in the Software Engineering
+          Feild. I still have not been able to decide on if I enjoy front end or
+          back end more! I have made a lot of progress that I am very proud of.
+          I want to countine to grow my skill set by expanding my skill set and
+          being faced with new software problems to solve.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <section class="footer_text">
+        <p class="footer_text">Phone: (208) 931-3959</p>
+        <p class="footer_text">Email: 1jaremil1@gmail.com</p>
+      </section>
+    </footer>
+
+    <script src="scripts/portfolio.js"></script>
+  </body>
+</html>
