@@ -60,6 +60,10 @@
 }
 
 @media (max-width: 800px) {
+  .about_title{ 
+    margin-left: 5%;
+  }
+
   .socialButton {
     width: 15%;
   }
@@ -99,6 +103,10 @@
 }
 
 @media (max-width: 900px) {
+  .about_title{ 
+    margin-left: 5%;
+  }
+
   .socialButton {
     display: none;
   }
@@ -179,6 +187,10 @@
 
   a.socialButton_about {
     display: none;
+  }
+
+  .about_title{ 
+    margin-left: 15%;
   }
 }
 
