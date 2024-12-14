@@ -242,21 +242,20 @@ tech-summary {
   transition: color 0.3s ease;
   color: black;
   background-color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
 }
 .filterToggle:hover {
   color: var(--accent2-color);
   border-color: var(--accent2-color);
 }
 
-#category-filter {
-  margin-top: 10%;
-}
-
 .changeToggle {
   font-weight: bold;
   font-size: 15px;
+}
+
+#apply-filters {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }

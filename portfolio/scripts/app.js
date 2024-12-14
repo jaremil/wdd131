@@ -10,7 +10,7 @@ function renderWebsites(websites) {
     const div = document.createElement('div');
     div.className = 'website-card';
     div.innerHTML = `
-      <h2>${website.name}</h2>
+      <h3>${website.name}</h3>
       <p>Category: ${website.category}</p>
       <p>Technologies: ${website.technologies.join(', ')}</p>
     `;
