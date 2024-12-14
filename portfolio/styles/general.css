@@ -19,23 +19,13 @@ body {
   line-height: 1.6;
 }
 
-body[data-theme="dark"] {
-  background-color: black;
-  color: white;
-}
-
-body[data-theme="light"] {
-  background-color: white;
-  color: #333;
-}
-
-/* .socialButton_about {
+.socialButton_about {
   width: 15%;
-  background: white;
   border: none;
   padding: 0;
   text-decoration: none;
-} */
+  border-radius: 30%;
+}
 
 main {
   text-align: center;
@@ -74,4 +64,36 @@ footer {
   width: 50%;
   padding: 10px;
   text-align: center;
+}
+
+/* Color theme changes */
+
+body[data-theme="dark"] {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+body[data-theme="light"] {
+  background-color: white;
+  color: black;
+}
+
+body[data-theme="dark"] .navBar {
+  color: var(--secondary-color); 
+}
+
+body[data-theme="light"] .navBar {
+  color: black;
+}
+
+body[data-theme="dark"] .navBar:hover {
+  color: var(--accent2-color);
+}
+
+body[data-theme="light"] .navBar:hover .changeToggle {
+  color: var(--accent2-color);
+}
+
+body[data-theme="dark"] #changeToggle {
+  color: black;
 }

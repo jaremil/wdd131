@@ -1,8 +1,13 @@
-// The site should have dynamic elements provided by Javascript, your code should show elements of the following:
+// Each of the following should be used: Objects
+// Each of the following should be used: ES Modules
+// Each of the following should be used: Arrays 
+// Each of the following should be used: array method usage
+// Each of the following should be used: forEach
+// Each of the following should be used: map
+// Each of the following should be used: reduce
+// Each of the following should be used: filter
 
-// Each of the following should be used: Objects, ES Modules, Arrays and array method usage (forEach, map, reduce, filter, etc)
-
-// DOM interaction: navigation scroll
+// smooth scroll
 
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('a[href^="#"]'); 
@@ -24,29 +29,37 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// conditional branching: dark theme
+// dark theme
 
-const themeSelector = document.querySelector("#changeToggle");
-
-function changeTheme() {
-
-    var select = document.querySelector("select");
-    var themeValue = select.value; 
-
-if (themeValue == "dark") {
-  document.body.setAttribute('data-theme', 'dark'); 
-
-  document.querySelector('#whiteLogo').setAttribute('src', 'byui-logo_white.png');
-  document.querySelector('#blueLogo').removeAttribute('src');
-  document.querySelector('#blueLogo').removeAttribute('alt');
+window.addEventListener('DOMContentLoaded', () => {
+  const themeSelector = document.querySelector("#changeToggle");
   
-  } else {
-    document.body.setAttribute('data-theme', 'light'); 
-    document.querySelector('#blueLogo').setAttribute('src', 'byui-logo_blue.jpg');
-    document.querySelector('#whiteLogo').removeAttribute('src');
-    document.querySelector('#whiteLogo').removeAttribute('alt');
+  function changeTheme() {
+    var select = document.querySelector("select");
+    var themeValue = select.value;
+
+    console.log("Theme Selected: " + themeValue); 
+
+    localStorage.setItem('theme', themeValue);
+
+    if (themeValue === "dark") {
+      document.body.setAttribute('data-theme', 'dark');
+    } else {
+      document.body.setAttribute('data-theme', 'light');
+    }
   }
-}
 
-themeSelector.addEventListener('change', changeTheme);
+  themeSelector.addEventListener('change', changeTheme);
 
+  const savedTheme = localStorage.getItem('theme');
+  
+  if (savedTheme) {
+    console.log("Applying saved theme: " + savedTheme); 
+    document.body.setAttribute('data-theme', savedTheme);
+    themeSelector.value = savedTheme;
+  } else {
+    console.log("No saved theme, applying default (light)");
+    document.body.setAttribute('data-theme', 'light');
+    themeSelector.value = 'light'; 
+  }
+});

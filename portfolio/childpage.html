@@ -5,47 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Jade Miller" />
     <meta property="title" content="Jade Miller, Portfolio" />
-    <meta name="description" content="The website is a software portfolio designed to showcase Jade Miller's work. Including personal projects, collaborative work, and course-specific accomplishments." />
+    <meta
+      name="description"
+      content="The website is a software portfolio designed to showcase Jade Miller's work. Including personal projects, collaborative work, and course-specific accomplishments."
+    />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/details.css" />
     <link rel="stylesheet" href="styles/larger.css" />
-    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/portfolio.js" defer></script>
     <title>Jade Miller, Portfolio</title>
   </head>
 
   <body>
     <header>
-        <nav>
-            <ul>
-              <li><a class="navBar" href="home.html#missionStatement">Mission Statement</a></li>
-              <li><a class="navBar" href="home.html#aboutMe">About Me</a></li>
-              <li><a class="navBar" href="home.html#searchFunctions">Search Projects</a></li>
-              <li><a class="navBar" href="#info">Resume</a></li>
-              <li>
-                <a class="socialButton" href="https://www.facebook.com/profile.php?id=100066191761841" target="_blank">
-                  <img class="socialImg" src="images/facebook.webp" alt="Jade Miller's Facebook" />
-                </a>
-              </li>
-              <li>
-                <a class="socialButton" href="https://www.instagram.com/jaremil/" target="_blank">
-                  <img class="socialImg" src="images/instagram.webp" alt="Jade Miller's Instagram" />
-                </a>
-              </li>
-              <li>
-                <a class="socialButton" href="https://www.linkedin.com/in/jade-r-miller-1ba1a4300/" target="_blank">
-                  <img class="socialImg" src="images/linkedin.webp" alt="Jade Miller's LinkedIn" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-          
-          <div class="container">
-            <div class="row">
-              <span class="text1">Jade Miller, Portfolio</span>
-              <span class="text2">Full Stack Development</span>
-            </div>
-          </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="navBar" href="home.html#missionStatement"
+              >Mission Statement</a
+            >
+          </li>
+          <li><a class="navBar" href="home.html#aboutMe">About Me</a></li>
+          <li>
+            <a class="navBar" href="home.html#searchFunctions"
+              >Search Projects</a
+            >
+          </li>
+          <li><a class="navBar" href="#info">Resume</a></li>
+          <li>
+            <select id="changeToggle" class="navBar">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </li>
+          <li>
+            <a
+              class="socialButton"
+              href="https://www.facebook.com/profile.php?id=100066191761841"
+              target="_blank"
+            >
+              <img
+                class="socialImg"
+                src="images/facebook.webp"
+                alt="Jade Miller's Facebook"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="socialButton"
+              href="https://www.instagram.com/jaremil/"
+              target="_blank"
+            >
+              <img
+                class="socialImg"
+                src="images/instagram.webp"
+                alt="Jade Miller's Instagram"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              class="socialButton"
+              href="https://www.linkedin.com/in/jade-r-miller-1ba1a4300/"
+              target="_blank"
+            >
+              <img
+                class="socialImg"
+                src="images/linkedin.webp"
+                alt="Jade Miller's LinkedIn"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <span class="text1">Jade Miller, Portfolio</span>
+          <span class="text2">Full Stack Development</span>
+        </div>
+      </div>
     </header>
     <main>
       <section id="info">
@@ -58,7 +99,7 @@
           being faced with new software problems to solve.
         </p>
       </section>
-      <img class="resume" src="images/resume.webp" alt="Jade Miller's resume">
+      <img class="resume" src="images/resume.webp" alt="Jade Miller's resume" />
     </main>
     <footer>
       <section class="footer_text">
@@ -66,6 +107,5 @@
         <p class="footer_text">Email: 1jaremil1@gmail.com</p>
       </section>
     </footer>
-
   </body>
 </html>

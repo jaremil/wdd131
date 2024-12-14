@@ -85,6 +85,7 @@
   display: inline-block;
   padding: 10px 20px;
   transition: color 0.3s ease;
+  color: black;
 }
 
 .navBar::after {
@@ -116,9 +117,21 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
   font-weight: bold;
   padding: 10px;
+}
+
+.changeToggle {
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  font-size: 15px;
+  border-radius: 50px;
 }
 
 .navBar:hover {
@@ -170,6 +183,7 @@ a.socialButton {
   width: 40px;
   height: 25px;
   transition: transform 0.3s ease;
+  border-radius: 30%;
 }
 
 /* Images */
@@ -217,29 +231,3 @@ a.socialButton {
   grid-row: 2/3;
   padding: 10px 50px;
 }
-
-/* 
-#definition_section{
-  display: grid;
-  grid-template-columns: .5fr 1fr ;
-  margin: 0 auto;
-  background-color: #cce6c8; 
-}
-
-#definition_section h1{
-  vertical-align: middle;
-  text-align: right;
-  grid-column: 1;
-  padding: 30px 20px 30px;
-}
-
-#definition_section p{
-  grid-column: 2;
-  text-align: left;
-  font-size: large;
-  padding: 10px 20px;
-}
-
- #packages_section{
-  text-align: center;  
- } */
